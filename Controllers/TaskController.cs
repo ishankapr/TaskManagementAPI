@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Models;
 using TaskManagement.Services;
-using TaskManagement.Entities;
-using TodoTask = TaskManagement.Entities.TodoTask;
-using System.Threading.Tasks;
 using TaskManagement.CustomExceptions;
+using TaskManagement.Entities;
 
 namespace TaskManagement.Controllers
 {
