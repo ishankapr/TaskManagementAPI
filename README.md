@@ -6,7 +6,7 @@
 
 # TaskManagement
 
-This is the backend application of Task Management application. this has Authentication and Task management related CURD operations
+This is the backend application of Task Management application. this has Authentication and Task management related CRUD operations
 
 Please use below credentials to login. Those values are hardcoded now since this use simple username and password authentication. You can see those values in AuthService.cs file
 
@@ -20,4 +20,4 @@ This can further improve if we can follow JWT authentication, Auth0 or session m
 
 # Test 
 
-Unit tests added to check the CURD operations in a separate project. Since it is using in memory databases no need to change any configurations.
+Unit tests added to check the CRUD operations in a separate project. Since it is using in memory databases no need to change any configurations.
