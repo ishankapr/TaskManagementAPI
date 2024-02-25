@@ -97,6 +97,24 @@ namespace TaskManagement.Controllers
                 });
             }
         }
+        
+        [HttpPut("tasks/complete/{id}")]
+        public async Task<IActionResult> MarkAsCompleted(int id)
+        {
+            try
+            {
+                var response = await _taskService.MarkAsCompleted(id);
+
+                return Ok(response); // 200 OK with resource data
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new TaskErrorResponse()
+                {
+                    Message = ex.Message
+                });
+            }
+        }
 
         [HttpDelete("tasks/{id}")]
         public async Task<IActionResult> DeleteTaskById(int id)

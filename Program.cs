@@ -1,8 +1,7 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using TaskManagement;
 using TaskManagement.Services;
-using Swashbuckle.Swagger;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +17,29 @@ IConfiguration configuration = new ConfigurationBuilder()
 string dbConnection = configuration["ConnectionStrings:dbConnection"];
 builder.Services.AddDbContext<TaskDbContext>(opt => opt.UseSqlServer(dbConnection));
 builder.Services.AddTransient<ITaskService, TaskService>();
+builder.Services.AddTransient<IAuthService, AuthService>();
+
+//builder.Services.AddDistributedMemoryCache();
+
+//builder.Services.AddSession(options =>
+//{
+//    options.IdleTimeout = TimeSpan.FromSeconds(1800);
+//    options.Cookie.HttpOnly = true;
+//    options.Cookie.IsEssential = true;
+//});
+
+//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+//        .AddCookie(options =>
+//        {
+//            options.Cookie.Name = "auth";
+//            options.Cookie.HttpOnly = true;
+//            options.LoginPath = new PathString("/auth/login");
+//            options.LogoutPath = new PathString("/auth/logout");
+//            options.AccessDeniedPath = new PathString("/tasks");
+//            options.ExpireTimeSpan = TimeSpan.FromDays(1);
+//            options.SlidingExpiration = false;
+//        });
+
 builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen();
@@ -38,6 +60,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("FrontendUI");
+
+//app.UseSession();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

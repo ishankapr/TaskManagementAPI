@@ -11,5 +11,6 @@ namespace TaskManagement.Services
         public Task<TodoTask> GetTaskByIdAsync(int taskId);
         public Task<TodoTask> DeleteTaskByIdAsync(int taskId);
         public Task<TodoTask> UpdateTaskAsync(TodoTask task);
+        public Task<bool> MarkAsCompleted(int id);
     }
 }

@@ -19,13 +19,17 @@ namespace TaskManagement.Entities
         public string Description { get; set; }
         
         [Column("DueDate")]
+        [Required(ErrorMessage = "Please set due date")]
         public DateTime DueDate { get; set; }
 
         [Column("CreatedDate")]
-        public DateTime CreatedDate { get; set; }
-        
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
+
+        [Column("IsCompleted")]
+        public bool IsCompleted { get; set; } = false;
+
         [Column("CreatedBy")]
-        public int CreatedBy { get; set; }
+        public int? CreatedBy { get; set; }
 
     }
 }

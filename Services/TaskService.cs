@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using TaskManagement.CustomExceptions;
 using TaskManagement.Entities;
 using TodoTask = TaskManagement.Entities.TodoTask;
@@ -15,6 +16,7 @@ namespace TaskManagement.Services
 
         public async Task<TodoTask> CreateTaskAsync(TodoTask task)
         {
+
             await _taskDbContext.Tasks.AddAsync(task);
             await _taskDbContext.SaveChangesAsync();
             return task;
@@ -49,6 +51,20 @@ namespace TaskManagement.Services
             _taskDbContext.Tasks.Remove(task);
             await _taskDbContext.SaveChangesAsync();
             return task;
+        }
+
+        public async Task<bool> MarkAsCompleted(int id)
+        {
+            var task = await _taskDbContext.Tasks.FindAsync(id);
+
+            if(task != null)
+            {
+                task.IsCompleted = true;
+                await _taskDbContext.SaveChangesAsync();
+                return true;
+            }
+            
+            return false;
         }
     }
 }
