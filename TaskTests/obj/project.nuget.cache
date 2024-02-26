@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o7OXuM7UNwYMGQGIJDEQHyl5UBOyI96RfLVF4zt3aIELaRNTs6e52eViu6QyTy97pBFIBy2AH1H3ciNmCqRa6Q==",
+  "dgSpecHash": "omshyyCsyngrWu5t2ErZCZMOEiQTcMmGT2FHagQMVJYGYX72XanSj5O43H7N3KySb1RAZJ3VMWBVynyCl1Lpbg==",
   "success": true,
-  "projectFilePath": "D:\\TaskManagement\\TaskManagementApi\\TaskTests\\TaskTests.csproj",
+  "projectFilePath": "D:\\TaskManagement\\TaskManagementAPI\\TaskTests\\TaskTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ishan\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\ishan\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TaskManagement\\TaskManagementApi\\TaskTests\\TaskTests.csproj": {}
+    "D:\\TaskManagement\\TaskManagementAPI\\TaskTests\\TaskTests.csproj": {}
   },
   "projects": {
-    "D:\\TaskManagement\\TaskManagementApi\\TaskManagement\\TaskManagement.csproj": {
+    "D:\\TaskManagement\\TaskManagementAPI\\TaskManagement\\TaskManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TaskManagement\\TaskManagementApi\\TaskManagement\\TaskManagement.csproj",
+        "projectUniqueName": "D:\\TaskManagement\\TaskManagementAPI\\TaskManagement\\TaskManagement.csproj",
         "projectName": "TaskManagement",
-        "projectPath": "D:\\TaskManagement\\TaskManagementApi\\TaskManagement\\TaskManagement.csproj",
+        "projectPath": "D:\\TaskManagement\\TaskManagementAPI\\TaskManagement\\TaskManagement.csproj",
         "packagesPath": "C:\\Users\\ishan\\.nuget\\packages\\",
-        "outputPath": "D:\\TaskManagement\\TaskManagementApi\\TaskManagement\\obj\\",
+        "outputPath": "D:\\TaskManagement\\TaskManagementAPI\\TaskManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ishan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,14 +94,14 @@
         }
       }
     },
-    "D:\\TaskManagement\\TaskManagementApi\\TaskTests\\TaskTests.csproj": {
+    "D:\\TaskManagement\\TaskManagementAPI\\TaskTests\\TaskTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TaskManagement\\TaskManagementApi\\TaskTests\\TaskTests.csproj",
+        "projectUniqueName": "D:\\TaskManagement\\TaskManagementAPI\\TaskTests\\TaskTests.csproj",
         "projectName": "TaskTests",
-        "projectPath": "D:\\TaskManagement\\TaskManagementApi\\TaskTests\\TaskTests.csproj",
+        "projectPath": "D:\\TaskManagement\\TaskManagementAPI\\TaskTests\\TaskTests.csproj",
         "packagesPath": "C:\\Users\\ishan\\.nuget\\packages\\",
-        "outputPath": "D:\\TaskManagement\\TaskManagementApi\\TaskTests\\obj\\",
+        "outputPath": "D:\\TaskManagement\\TaskManagementAPI\\TaskTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ishan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -119,8 +119,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\TaskManagement\\TaskManagementApi\\TaskManagement\\TaskManagement.csproj": {
-                "projectPath": "D:\\TaskManagement\\TaskManagementApi\\TaskManagement\\TaskManagement.csproj"
+              "D:\\TaskManagement\\TaskManagementAPI\\TaskManagement\\TaskManagement.csproj": {
+                "projectPath": "D:\\TaskManagement\\TaskManagementAPI\\TaskManagement\\TaskManagement.csproj"
               }
             }
           }
